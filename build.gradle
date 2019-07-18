@@ -1,0 +1,65 @@
+buildscript {
+	ext {
+		kotlinVersion = '1.2.71'
+		springBootVersion = '2.1.3.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+		classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
+		classpath ("org.jetbrains.kotlin:kotlin-noarg:${kotlinVersion}")
+	}
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-jpa'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-spring'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+apply from: "$rootDir/gradle/asciidoctor.gradle"
+apply from: "$rootDir/gradle/docker.gradle"
+apply from: "$rootDir/gradle/react.gradle"
+
+group = 'com.suyuancheng.platform'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+compileKotlin {
+	kotlinOptions {
+		freeCompilerArgs = ["-Xjsr305=strict", "-Xjvm-default=enable"]
+		jvmTarget = "1.8"
+	}
+}
+compileTestKotlin {
+	kotlinOptions {
+		freeCompilerArgs = ["-Xjsr305=strict", "-Xjvm-default=enable"]
+		jvmTarget = "1.8"
+	}
+}
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile("org.springframework.boot:spring-boot-starter-data-jpa")
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-security')
+	compile('org.springframework.boot:spring-boot-starter-json')
+	compile("com.h2database:h2")
+	compile 'mysql:mysql-connector-java'
+	compile('com.querydsl:querydsl-jpa')
+	kapt('com.querydsl:querydsl-apt::jpa')
+	implementation('org.springframework.boot:spring-boot-starter')
+	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	testCompile("junit:junit")
+	testCompile('org.apache.commons:commons-lang3:3.8')
+	testCompile("org.springframework.security:spring-security-test")
+	testCompile("org.springframework.restdocs:spring-restdocs-mockmvc")
+	testCompile ('com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+}

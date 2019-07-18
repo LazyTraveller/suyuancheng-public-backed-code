@@ -1,0 +1,60 @@
+= PLU
+ifndef::snippets[:snippets: ../build/snippets]
+
+== query
+
+.request
+include::{snippets}/plu/query/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/plu/query/request-parameters.adoc[]
+
+.response
+include::{snippets}/plu/query/http-response.adoc[]
+
+== list
+
+.request
+include::{snippets}/plu/list/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/plu/list/request-parameters.adoc[]
+
+.response
+include::{snippets}/plu/list/http-response.adoc[]
+
+== update
+
+.request
+include::{snippets}/plu/update/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/plu/update/request-body.adoc[]
+
+.path-parameters
+include::{snippets}/plu/update/path-parameters.adoc[]
+
+.response
+include::{snippets}/plu/update/http-response.adoc[]
+
+== create
+
+.request
+include::{snippets}/plu/create/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/plu/create/request-body.adoc[]
+
+.response
+include::{snippets}/plu/create/http-response.adoc[]
+
+== delete
+
+.request
+include::{snippets}/plu/delete/httpie-request.adoc[]
+
+.path-parameters
+include::{snippets}/plu/delete/path-parameters.adoc[]
+
+.response
+include::{snippets}/plu/delete/http-response.adoc[]

@@ -1,0 +1,57 @@
+= Market
+ifndef::snippets[:snippets: ../build/snippets]
+
+== list
+
+.request
+include::{snippets}/store/list/httpie-request.adoc[]
+
+.response
+include::{snippets}/store/list/http-response.adoc[]
+
+== query
+
+.request
+include::{snippets}/market/query/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/market/query/request-parameters.adoc[]
+
+.response
+include::{snippets}/market/query/http-response.adoc[]
+
+== update
+
+.request
+include::{snippets}/market/update/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/market/update/request-body.adoc[]
+
+.path-parameters
+include::{snippets}/market/update/path-parameters.adoc[]
+
+.response
+include::{snippets}/market/update/http-response.adoc[]
+
+== create
+
+.request
+include::{snippets}/market/create/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/market/create/request-body.adoc[]
+
+.response
+include::{snippets}/market/create/http-response.adoc[]
+
+== delete
+
+.request
+include::{snippets}/market/delete/httpie-request.adoc[]
+
+.path-parameters
+include::{snippets}/market/delete/path-parameters.adoc[]
+
+.response
+include::{snippets}/market/delete/http-response.adoc[]

@@ -1,0 +1,40 @@
+= suyuancheng Platform Backend REST Docs
+:toc: left
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 3
+:sectanchors:
+:sectlinks:
+:icons: font
+ifndef::snippets[:snippets: ../build/snippets]
+== APIs
+
+:leveloffset: +2
+
+include::user.adoc[]
+
+include::market.adoc[]
+
+include::store.adoc[]
+
+include::provider.adoc[]
+
+include::goods.adoc[]
+
+include::su-yuan-cheng.adoc[]
+
+include::plu.adoc[]
+
+include::trading.adoc[]
+
+include::trading-item.adoc[]
+
+include::tradingInfo.adoc[]
+
+include::market-admin.adoc[]
+
+include::store-admin.adoc[]
+
+include::e-charts.adoc[]
+
+:leveloffset: -2

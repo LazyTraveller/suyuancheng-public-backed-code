@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("org.asciidoctor:asciidoctor-gradle-plugin:1.5.8")
+    }
+}
+
+apply plugin: org.asciidoctor.gradle.AsciidoctorPlugin
+
+asciidoctor {
+    sourceDir 'restdocs'
+    attributes['snippets'] = file('build/snippets')
+}
+
+

@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+        jcenter()
+    }
+    dependencies {
+        classpath("com.bmuschko:gradle-docker-plugin:3.6.1")
+    }
+}
+
+apply plugin: com.bmuschko.gradle.docker.DockerSpringBootApplicationPlugin
+apply plugin: com.bmuschko.gradle.docker.DockerRemoteApiPlugin
+
+docker {
+    springBootApplication {
+        baseImage = 'openjdk:8-alpine'
+        ports = [8802, 8852]
+        tag = "${project.group}/${project.name}:latest"
+    }
+}
+
+dockerCreateDockerfile {
+    maintainer 'hsj "670547309@qq.com"'
+    workingDir '/app/'
+}
+
+task docDockerSyncFile(type: Sync) {
+    group = 'doc-docker'
+    dependsOn = [asciidoctor]
+
+    from "${asciidoctor.outputDir}/html5/"
+    into "$buildDir/docker-doc/html"
+}
+
+import com.bmuschko.gradle.docker.tasks.image.DockerBuildImage
+import com.bmuschko.gradle.docker.tasks.image.Dockerfile
+
+task docDockerCreateDockerfile(type: Dockerfile) {
+    group = 'doc-docker'
+    dependsOn = [docDockerSyncFile]
+
+    destFile = file("${buildDir}/docker-doc/Dockerfile")
+    from 'nginx'
+    maintainer 'hsj "670547309@qq.com"'
+    copyFile 'html/', '/usr/share/nginx/html/'
+}
+
+task docDockerBuildImage(type: DockerBuildImage) {
+    group = 'doc-docker'
+    dependsOn = [docDockerCreateDockerfile]
+
+    inputDir = docDockerCreateDockerfile.destFile.parentFile
+    tag = "${project.group}/${project.name}-doc:latest"
+}

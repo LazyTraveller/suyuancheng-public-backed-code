@@ -1,0 +1,24 @@
+= Trading
+ifndef::snippets[:snippets: ../build/snippets]
+
+== query
+
+.request
+include::{snippets}/trading/query/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/trading/query/request-parameters.adoc[]
+
+.response
+include::{snippets}/trading/query/http-response.adoc[]
+
+== create
+
+.request
+include::{snippets}/trading/create/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/trading/create/request-body.adoc[]
+
+.response
+include::{snippets}/trading/create/http-response.adoc[]

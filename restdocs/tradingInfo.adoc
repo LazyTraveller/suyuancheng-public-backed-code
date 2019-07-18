@@ -1,0 +1,24 @@
+= TradingInfo
+ifndef::snippets[:snippets: ../build/snippets]
+
+== pull
+
+.request
+include::{snippets}/trading-info/pull/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/trading-info/pull/request-parameters.adoc[]
+
+.response
+include::{snippets}/trading-info/pull/http-response.adoc[]
+
+== push
+
+.request
+include::{snippets}/trading-info/push/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/trading-info/push/request-body.adoc[]
+
+.response
+include::{snippets}/trading-info/push/http-response.adoc[]

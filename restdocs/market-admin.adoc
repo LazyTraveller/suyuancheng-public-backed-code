@@ -1,0 +1,49 @@
+= MarketAdmin
+ifndef::snippets[:snippets: ../build/snippets]
+
+== query
+
+.request
+include::{snippets}/market-admin/query/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/market-admin/query/request-parameters.adoc[]
+
+.response
+include::{snippets}/market-admin/query/http-response.adoc[]
+
+== update
+
+.request
+include::{snippets}/market-admin/update/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/market-admin/update/request-body.adoc[]
+
+.path-parameters
+include::{snippets}/market-admin/update/path-parameters.adoc[]
+
+.response
+include::{snippets}/market-admin/update/http-response.adoc[]
+
+== create
+
+.request
+include::{snippets}/market-admin/create/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/market-admin/create/request-body.adoc[]
+
+.response
+include::{snippets}/market-admin/create/http-response.adoc[]
+
+== delete
+
+.request
+include::{snippets}/market-admin/delete/httpie-request.adoc[]
+
+.path-parameters
+include::{snippets}/market-admin/delete/path-parameters.adoc[]
+
+.response
+include::{snippets}/market-admin/delete/http-response.adoc[]

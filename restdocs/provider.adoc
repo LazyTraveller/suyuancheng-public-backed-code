@@ -1,0 +1,57 @@
+= Provider
+ifndef::snippets[:snippets: ../build/snippets]
+
+== list
+
+.request
+include::{snippets}/provider/list/httpie-request.adoc[]
+
+.response
+include::{snippets}/provider/list/http-response.adoc[]
+
+== query
+
+.request
+include::{snippets}/provider/query/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/provider/query/request-parameters.adoc[]
+
+.response
+include::{snippets}/provider/query/http-response.adoc[]
+
+== update
+
+.request
+include::{snippets}/provider/update/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/provider/update/request-body.adoc[]
+
+.path-parameters
+include::{snippets}/provider/update/path-parameters.adoc[]
+
+.response
+include::{snippets}/provider/update/http-response.adoc[]
+
+== create
+
+.request
+include::{snippets}/provider/create/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/provider/create/request-body.adoc[]
+
+.response
+include::{snippets}/provider/create/http-response.adoc[]
+
+== delete
+
+.request
+include::{snippets}/provider/delete/httpie-request.adoc[]
+
+.path-parameters
+include::{snippets}/provider/delete/path-parameters.adoc[]
+
+.response
+include::{snippets}/provider/delete/http-response.adoc[]

@@ -1,0 +1,46 @@
+= User
+ifndef::snippets[:snippets: ../build/snippets]
+
+== info
+==getUserInfo
+.request
+include::{snippets}/user/info/httpie-request.adoc[]
+
+.response
+include::{snippets}/user/info/http-response.adoc[]
+
+== query
+
+.request
+include::{snippets}/user/query/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/user/query/request-parameters.adoc[]
+
+.response
+include::{snippets}/user/query/http-response.adoc[]
+
+== update
+
+.request
+include::{snippets}/user/update/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/user/update/request-body.adoc[]
+
+.path-parameters
+include::{snippets}/user/update/path-parameters.adoc[]
+
+.response
+include::{snippets}/user/update/http-response.adoc[]
+
+== create
+
+.request
+include::{snippets}/user/create/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/user/create/request-body.adoc[]
+
+.response
+include::{snippets}/user/create/http-response.adoc[]

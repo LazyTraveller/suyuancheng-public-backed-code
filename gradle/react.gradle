@@ -1,0 +1,27 @@
+
+
+ext {
+    NODE_PROJ_DIR = 'front/suyuancheng-front'
+    NODE_MANAGER = 'npm'
+}
+task npmBuild(type: Exec) {
+    workingDir = file(NODE_PROJ_DIR)
+    commandLine  "cmd" , '/c', 'npm', 'run', 'build'
+}
+task npmInstall(type: Exec) {
+    workingDir = file(NODE_PROJ_DIR)
+    commandLine 'cmd', '/c', NODE_MANAGER, "install"
+}
+
+
+task frontendAssemble(type: Copy, dependsOn: 'npmBuild') {
+    def buildDir = file("$NODE_PROJ_DIR/build")
+    from buildDir
+    into "build/resources/main/front"
+}
+
+if (project.hasProperty("node.install")) {
+    npmBuild.dependsOn 'npmInstall'
+}
+
+bootJar.dependsOn 'frontendAssemble'

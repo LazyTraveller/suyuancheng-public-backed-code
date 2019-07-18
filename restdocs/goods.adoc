@@ -1,0 +1,56 @@
+= Goods
+ifndef::snippets[:snippets: ../build/snippets]
+
+== list
+.request
+include::{snippets}/goods/list/httpie-request.adoc[]
+
+.response
+include::{snippets}/goods/list/http-response.adoc[]
+
+== query
+
+.request
+include::{snippets}/goods/query/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/goods/query/request-parameters.adoc[]
+
+.response
+include::{snippets}/goods/query/http-response.adoc[]
+
+== update
+
+.request
+include::{snippets}/goods/update/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/goods/update/request-body.adoc[]
+
+.path-parameters
+include::{snippets}/goods/update/path-parameters.adoc[]
+
+.response
+include::{snippets}/goods/update/http-response.adoc[]
+
+== create
+
+.request
+include::{snippets}/goods/create/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/goods/create/request-body.adoc[]
+
+.response
+include::{snippets}/goods/create/http-response.adoc[]
+
+== delete
+
+.request
+include::{snippets}/goods/delete/httpie-request.adoc[]
+
+.path-parameters
+include::{snippets}/goods/delete/path-parameters.adoc[]
+
+.response
+include::{snippets}/goods/delete/http-response.adoc[]

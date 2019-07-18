@@ -1,0 +1,33 @@
+= ECharts
+ifndef::snippets[:snippets: ../build/snippets]
+
+== sales
+店铺管理员: 将返回map<String, Float>格式， String为商品名称， Float为销售额
+
+市场管理员: 将返回map<String, Float>格式， String为商铺名称，Float为销售额
+
+系统管理员: 将返回map<String, Float>格式， String为市场名称，Float为销售额
+
+.request
+include::{snippets}/e-charts/sales/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/e-charts/sales/request-parameters.adoc[]
+
+.response
+include::{snippets}/e-charts/sales/http-response.adoc[]
+
+
+== storeSales
+
+返回当前店铺某段时间内的销售额,只有店铺管理员可用
+
+.request
+include::{snippets}/e-charts/store-sales/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/e-charts/store-sales/request-parameters.adoc[]
+
+.response
+include::{snippets}/e-charts/store-sales/http-response.adoc[]
+

@@ -1,0 +1,49 @@
+= SuYuanCheng
+ifndef::snippets[:snippets: ../build/snippets]
+
+== query
+
+.request
+include::{snippets}/su-yuan-cheng/query/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/su-yuan-cheng/query/request-parameters.adoc[]
+
+.response
+include::{snippets}/su-yuan-cheng/query/http-response.adoc[]
+
+== update
+
+.request
+include::{snippets}/su-yuan-cheng/update/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/su-yuan-cheng/update/request-body.adoc[]
+
+.request-parameters
+include::{snippets}/su-yuan-cheng/update/request-parameters.adoc[]
+
+.response
+include::{snippets}/su-yuan-cheng/update/http-response.adoc[]
+
+== create
+
+.request
+include::{snippets}/su-yuan-cheng/create/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/su-yuan-cheng/create/request-body.adoc[]
+
+.response
+include::{snippets}/su-yuan-cheng/create/http-response.adoc[]
+
+== delete
+
+.request
+include::{snippets}/su-yuan-cheng/delete/httpie-request.adoc[]
+
+.path-parameters
+include::{snippets}/su-yuan-cheng/delete/path-parameters.adoc[]
+
+.response
+include::{snippets}/su-yuan-cheng/delete/http-response.adoc[]

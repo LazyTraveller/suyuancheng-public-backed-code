@@ -1,0 +1,49 @@
+= StoreAdmin
+ifndef::snippets[:snippets: ../build/snippets]
+
+== query
+
+.request
+include::{snippets}/store-admin/query/httpie-request.adoc[]
+
+.request-parameters
+include::{snippets}/store-admin/query/request-parameters.adoc[]
+
+.response
+include::{snippets}/store-admin/query/http-response.adoc[]
+
+== update
+
+.request
+include::{snippets}/store-admin/update/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/store-admin/update/request-body.adoc[]
+
+.path-parameters
+include::{snippets}/store-admin/update/path-parameters.adoc[]
+
+.response
+include::{snippets}/store-admin/update/http-response.adoc[]
+
+== create
+
+.request
+include::{snippets}/store-admin/create/httpie-request.adoc[]
+
+.request-body
+include::{snippets}/store-admin/create/request-body.adoc[]
+
+.response
+include::{snippets}/store-admin/create/http-response.adoc[]
+
+== delete
+
+.request
+include::{snippets}/store-admin/delete/httpie-request.adoc[]
+
+.path-parameters
+include::{snippets}/store-admin/delete/path-parameters.adoc[]
+
+.response
+include::{snippets}/store-admin/delete/http-response.adoc[]
